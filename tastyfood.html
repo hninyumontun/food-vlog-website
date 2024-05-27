@@ -1,0 +1,841 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TastyVoyage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="..." crossorigin="anonymous" />
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-white shadow py-3 sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-5" href="#">TastyVoyage.
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#recipe">Recipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--slide-->
+
+    <div id="slide" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <div class="carousel-item text-center bg-cover vh-100 active slide1">
+                <div class="container h-100 d-flex align-items-center justify-content-center">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8"></div>
+                        <h6 class="text-white">Welcome to TastyVoyage!</h6>
+                        <h1 class="display1 fw-bold text-white"> Char-grilled and Flavour-filled</h1>
+                        <form action="#home"><button class="btn btn-brand btn-sm">Subscribe</button></form>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item text-center bg-cover vh-100 slide2">
+                <div class="container h-100 d-flex align-items-center justify-content-center">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8"></div>
+                        <h6 class="text-white">Welcome to TastyVoyage!</h6>
+                        <h1 class="display1 fw-bold text-white">Fresh Tasty Food</h1>
+                        <form action="#home"><button class="btn btn-brand btn-sm">Subscribe</button></form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#slide" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#slide" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Home Section -->
+    <section id="home" class="text-black align-items-center">
+        <div class="containerHome row ">
+            <div class="contentSection col-lg-8 col-md-8 col-sm-12">
+                <h1 class="text-center">Welcome to TastyVoyage!</h1>
+                <p class="text-center">Explore the world of delicious recipes and culinary delights.</p></br>
+                <p class="text-center">From mouth-watering appetizers to decadent desserts, we have something for every taste bud.</p>
+                <p class="text-center">Join us on a journey to discover new flavors, cooking techniques, and food culture from around the
+                    globe.</p>
+                <form action="subscribe.php" method="POST" class="subscribe-form text-center">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+            <div class="containerImage  col-lg-4 col-md-4 col-sm-12">
+
+                <img src="https://picturetherecipe.com/wp-content/uploads/2018/01/Spaghetti-Lamb-Bolognese-by-PTR-Featured-395x500.jpg" alt="Noodle">
+            </div>
+        </div>
+    </section>
+    <!--Recipe-->
+    <section id="recipe" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1>Recipe</h1>
+                    <p>Explore our collection of delicious recipes curated from around the world. 
+                        From classic favorites to innovative creations, 
+                        find inspiration to delight your taste buds and impress your loved ones.</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class=" nav-link active btn-block" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">All</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class=" nav-link btn-block " id="pills-breakfast-tab" data-bs-toggle="pill" data-bs-target="#pills-breakfast" type="button" role="tab" aria-controls="pills-breakfast" aria-selected="true">Breakfast</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link btn-block" id="pills-lunch-tab" data-bs-toggle="pill" data-bs-target="#pills-lunch" type="button" role="tab" aria-controls="pills-lunch" aria-selected="true">Lunch</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link btn-block" id="pills-dinner-tab" data-bs-toggle="pill" data-bs-target="#pills-dinner" type="button" role="tab" aria-controls="pills-dinner" aria-selected="true">Dinner</button>
+                  </li>
+    
+              </ul>
+    
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab" tabindex="0">
+                
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="recipeItem bg-white shadow-on-hover">
+                                <img src="https://scotland-meets-sardinia.myshopify.com/cdn/shop/products/spaghetti-with-red-sauce-on-white-ceramic-plate_300x300.jpg?v=1591564922" alt="Spaghetti" 
+                                style="max-width: 100%; height: auto;">
+                                <div class="recipeItem-content">
+                                    <h5 class="text-center">Spaghetti</h5>
+                                    <p>Indulge in the creamy goodness of Spaghetti Carbonara,
+                                        a classic Italian dish that's simple yet satisfying.</p>
+                                        <div class="align-items-center text-center"> 
+                                            <a href="#" class="btn btn-brand read-more-btn my-3 mx-auto" data-toggle="modal" data-target="#recipeModal">Read More</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="recipeItem bg-white shadow-on-hover">
+                                <img src="https://static.vecteezy.com/system/resources/thumbnails/015/933/727/small/red-chicken-curry-or-murgh-masala-or-korma-with-prominent-leg-piece-free-photo.jpg" alt="Spaghetti"
+                                style="max-width: 100%; height: auto;">
+                                <div class="recipeItem-content">
+                                    <h5 class="text-center">Ckicken Curry</h5>
+                                    <p>Indulge in the creamy goodness of Spaghetti Carbonara,
+                                        a classic Italian dish that's simple yet satisfying.</p>
+                                        <div class="align-items-center text-center"> 
+                                            <a href="#" class="btn btn-brand read-more-btn my-3 mx-auto" data-toggle="modal" data-target="#recipeModal">Read More</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="recipeItem bg-white shadow-on-hover">
+                                <img src="https://d2s742iet3d3t1.cloudfront.net/restaurants/restaurant-46145000000000000/menu/images/item-2ad21bab-8838-45ce-bbcb-291f15fdd5bd.jpg?size=medium" alt="Spaghetti"
+                                style="max-width: 100%; height: auto;">
+                                <div class="recipeItem-content">
+                                    <h5 class="text-center">Lo Mein Noodle</h5>
+                                    <p>Indulge in the creamy goodness of Spaghetti Carbonara,
+                                        a classic Italian dish that's simple yet satisfying.</p>
+                                        <div class="align-items-center text-center"> 
+                                            <a href="#" class="btn btn-brand read-more-btn my-3 mx-auto" data-toggle="modal" data-target="#recipeModal">Read More</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="recipeItem bg-white shadow-on-hover">
+                                <img src="https://i0.wp.com/blog.themalamarket.com/wp-content/uploads/2022/12/tomato-egg-knifecut-noodle-18.jpg?fit=300%2C200&ssl=1" alt="Spaghetti"
+                                style="max-width: 100%; height: auto;">
+                                <div class="recipeItem-content">
+                                    <h5 class="text-center">Tomato Egg Noodle</h5>
+                                    <p>Indulge in the creamy goodness of Spaghetti Carbonara,
+                                        a classic Italian dish that's simple yet satisfying.</p>
+                                        <div class="align-items-center text-center"> 
+                                            <a href="#" class="btn btn-brand read-more-btn my-3 mx-auto" data-toggle="modal" data-target="#recipeModal">Read More</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="recipeItem bg-white shadow-on-hover">
+                                <img src="https://arbuz.com/wp-content/uploads/2015/07/Beef-and-Rice-Soup-Mastava-2-300x200.jpg" alt="Spaghetti"
+                                style="max-width: 100%; height: auto;">
+                                <div class="recipeItem-content">
+                                    <h5 class="text-center">Beff and Rice Soup</h5>
+                                    <p>Indulge in the creamy goodness of Spaghetti Carbonara,
+                                        a classic Italian dish that's simple yet satisfying.</p>
+                                        <div class="align-items-center text-center"> 
+                                            <a href="#" class="btn btn-brand read-more-btn my-3 mx-auto" data-toggle="modal" data-target="#recipeModal">Read More</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="recipeItem bg-white shadow-on-hover">
+                                <img src="https://static.vecteezy.com/system/resources/thumbnails/027/633/632/small/illustration-of-different-fruit-juices-and-smoothies-photo.jpg" alt="Spaghetti"
+                                style="max-width: 100%; height: auto;">
+                                <div class="recipeItem-content">
+                                    <h5 class="text-center">Fresh Feuit Juice</h5>
+                                    <p>Indulge in the creamy goodness of Spaghetti Carbonara,
+                                        a classic Italian dish that's simple yet satisfying.</p>
+                                        <div class="align-items-center text-center"> 
+                                            <a href="#" class="btn btn-brand read-more-btn my-3 mx-auto" data-toggle="modal" data-target="#recipeModal">Read More</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="recipeItem bg-white shadow-on-hover">
+                                <img src="https://vanillaandbean.com/wp-content/uploads/2015/02/JewledSalad-9-300x200.jpg" alt="Spaghetti"
+                                style="max-width: 100%; height: auto;">
+                                <div class="recipeItem-content">
+                                    <h5 class="text-center">Salad</h5>
+                                    <p>Indulge in the creamy goodness of Spaghetti Carbonara,
+                                        a classic Italian dish that's simple yet satisfying.</p>
+                                        <div class="align-items-center text-center"> 
+                                            <a href="#" class="btn btn-brand read-more-btn my-3 mx-auto" data-toggle="modal" data-target="#recipeModal">Read More</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="recipeItem bg-white shadow-on-hover">
+                                <img src="https://www.usnews.com/object/image/0000018a-fb3e-d260-a5ef-fb3f7c180000/https-media-gettyimages-com-id-1183748291-photo-spaghetti-bolognese.jpg?update-time=1696432335154&size=responsiveFlow300" alt="Spaghetti"
+                                style="max-width: 100%; height: auto;">
+                                <div class="recipeItem-content">
+                                    <h5 class="text-center">Pasta</h5>
+                                    <p>Indulge in the creamy goodness of Spaghetti Carbonara,
+                                        a classic Italian dish that's simple yet satisfying.</p>
+                                        <div class="align-items-center text-center"> 
+                                            <a href="#" class="btn btn-brand read-more-btn my-3 mx-auto" data-toggle="modal" data-target="#recipeModal">Read More</a>
+                                        </div>
+                                </div>
+                            </div>
+                            <div style="margin-top:20px">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-end">
+                                      <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                          <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                      </li>
+                                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                          <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </nav>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+                <div class="tab-pane fade show " id="pills-breakfast" role="tabpanel" aria-labelledby="pills-breakfast-tab" tabindex="0">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="recipeItem bg-white shadow-on-hover">
+                                <img src="https://www.ansi.org/-/media/ANSI/Images/News%20and%20Events/News/B/Breakfast_tosize.jpg" alt="Spaghetti"
+                                style="max-width: 100%; height: auto;">
+                                <div class="recipeItem-content">
+                                    <h5 class="text-center">Bacon</h5>
+                                    <p>Indulge in the creamy goodness of Spaghetti Carbonara,
+                                        a classic Italian dish that's simple yet satisfying.</p>
+                                        <div class="align-items-center text-center"> 
+                                            <a href="#" class="btn btn-brand read-more-btn my-3 mx-auto" data-toggle="modal" data-target="#recipeModal">Read More</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="recipeItem bg-white shadow-on-hover">
+                                <img src="https://fiveoaksfarmkitchen.com/wp-content/uploads/2022/01/FOFK-5120-300x200.jpg" alt="Spaghetti"
+                                style="max-width: 100%; height: auto;">
+                                <div class="recipeItem-content">
+                                    <h5 class="text-center">Cinnamon Roll</h5>
+                                    <p>Indulge in the creamy goodness of Spaghetti Carbonara,
+                                        a classic Italian dish that's simple yet satisfying.</p>
+                                        <div class="align-items-center text-center"> 
+                                            <a href="#" class="btn btn-brand read-more-btn my-3 mx-auto" data-toggle="modal" data-target="#recipeModal">Read More</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="recipeItem bg-white shadow-on-hover">
+                                <img src="https://i0.wp.com/fountainavenuekitchen.com/wp-content/uploads/2018/10/fullsizeoutput_9dca.jpeg?fit=300%2C200&ssl=1" alt="Spaghetti"
+                                style="max-width: 100%; height: auto;">
+                                <div class="recipeItem-content">
+                                    <h5 class="text-center">Cinnamon Toast</h5>
+                                    <p>Indulge in the creamy goodness of Spaghetti Carbonara,
+                                        a classic Italian dish that's simple yet satisfying.</p>
+                                        <div class="align-items-center text-center"> 
+                                            <a href="#" class="btn btn-brand read-more-btn my-3 mx-auto" data-toggle="modal" data-target="#recipeModal">Read More</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="recipeItem bg-white shadow-on-hover">
+                                <img src="https://recipes.net/wp-content/uploads/2021/12/korean-sweet-pancakes-hotteok-recipe-300x200.jpg" alt="Spaghetti"
+                                style="max-width: 100%; height: auto;">
+                                <div class="recipeItem-content">
+                                    <h5 class="text-center">Korea Sweet Pancake</h5>
+                                    <p>Indulge in the creamy goodness of Spaghetti Carbonara,
+                                        a classic Italian dish that's simple yet satisfying.</p>
+                                        <div class="align-items-center text-center"> 
+                                            <a href="#" class="btn btn-brand read-more-btn my-3 mx-auto" data-toggle="modal" data-target="#recipeModal">Read More</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="recipeItem bg-white shadow-on-hover">
+                                <img src="https://static.vecteezy.com/system/resources/thumbnails/017/560/977/small/deep-fried-dough-stick-patongo-soy-milk-pandan-custard-breakfast-photo.jpg" alt="Spaghetti"
+                                style="max-width: 100%; height: auto;">
+                                <div class="recipeItem-content">
+                                    <h5 class="text-center">Fried Dough Stick</h5>
+                                    <p>Indulge in the creamy goodness of Spaghetti Carbonara,
+                                        a classic Italian dish that's simple yet satisfying.</p>
+                                        <div class="align-items-center text-center"> 
+                                            <a href="#" class="btn btn-brand read-more-btn my-3 mx-auto" data-toggle="modal" data-target="#recipeModal">Read More</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="recipeItem bg-white shadow-on-hover">
+                                <img src="https://tasteasianfood.com/wp-content/uploads/2017/11/Singapore-noodles-300x200.jpg.webp" alt="Spaghetti"
+                                style="max-width: 100%; height: auto;">
+                                <div class="recipeItem-content">
+                                    <h5 class="text-center">Fried Noodle</h5>
+                                    <p>Indulge in the creamy goodness of Spaghetti Carbonara,
+                                        a classic Italian dish that's simple yet satisfying.</p>
+                                        <div class="align-items-center text-center"> 
+                                            <a href="#" class="btn btn-brand read-more-btn my-3 mx-auto" data-toggle="modal" data-target="#recipeModal">Read More</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-end">
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                  <span aria-hidden="true">&laquo;</span>
+                                </a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                  <span aria-hidden="true">&raquo;</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
+                    </div>
+            </div>
+                <div class="tab-pane fade show " id="pills-lunch" role="tabpanel" aria-labelledby="pills-lunch-tab" tabindex="0">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="recipeItem bg-white shadow-on-hover">
+                                <img src="https://n6a7k3g3.rocketcdn.me/wp-content/uploads/2022/01/Red-Lentil-and-Chicken-Curry-93-300x200.jpg" alt="Spaghetti"
+                                style="max-width: 100%; height: auto;">
+                                <div class="recipeItem-content">
+                                    <h5 class="text-center">Chicken and Lentil Currry</h5>
+                                    <p>Indulge in the creamy goodness of Spaghetti Carbonara,
+                                        a classic Italian dish that's simple yet satisfying.</p>
+                                        <div class="align-items-center text-center"> 
+                                            <a href="#" class="btn btn-brand read-more-btn my-3 mx-auto" data-toggle="modal" data-target="#recipeModal">Read More</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="recipeItem bg-white shadow-on-hover">
+                                <img src="https://abbysplate.com/wp-content/uploads/2022/02/09-Tasty-and-spicy-Indian-basa-curry-with-East-Indian-vindaloo-300x200.jpg" alt="Spaghetti"
+                                style="max-width: 100%; height: auto;">
+                                <div class="recipeItem-content">
+                                    <h5 class="text-center">Indian Style Fish Curry</h5>
+                                    <p>Indulge in the creamy goodness of Spaghetti Carbonara,
+                                        a classic Italian dish that's simple yet satisfying.</p>
+                                        <div class="align-items-center text-center"> 
+                                            <a href="#" class="btn btn-brand read-more-btn my-3 mx-auto" data-toggle="modal" data-target="#recipeModal">Read More</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="recipeItem bg-white shadow-on-hover">
+                                <img src="https://mildlyindian.com/wp-content/uploads/2021/09/Channa-masala.-1-300x200.jpg" alt="Spaghetti"
+                                style="max-width: 100%; height: auto;">
+                                <div class="recipeItem-content">
+                                    <h5 class="text-center">Channa Masala</h5>
+                                    <p>Indulge in the creamy goodness of Spaghetti Carbonara,
+                                        a classic Italian dish that's simple yet satisfying.</p>
+                                        <div class="align-items-center text-center"> 
+                                            <a href="#" class="btn btn-brand read-more-btn my-3 mx-auto" data-toggle="modal" data-target="#recipeModal">Read More</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="recipeItem bg-white shadow-on-hover">
+                                <img src="https://abbysplate.com/wp-content/uploads/2020/06/03-Val-curry-is-ready-to-eat-300x200.jpg" alt="Spaghetti"
+                                style="max-width: 100%; height: auto;">
+                                <div class="recipeItem-content">
+                                    <h5 class="text-center">Butter Bean</h5>
+                                    <p>Indulge in the creamy goodness of Spaghetti Carbonara,
+                                        a classic Italian dish that's simple yet satisfying.</p>
+                                        <div class="align-items-center text-center"> 
+                                            <a href="#" class="btn btn-brand read-more-btn my-3 mx-auto" data-toggle="modal" data-target="#recipeModal">Read More</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="recipeItem bg-white shadow-on-hover">
+                                <img src="data:image/jpeg;base64,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" alt="Spaghetti"
+                                style="max-width: 100%; height: auto;">
+                                <div class="recipeItem-content">
+                                    <h5 class="text-center">Pork Curry</h5>
+                                    <p>Indulge in the creamy goodness of Spaghetti Carbonara,
+                                        a classic Italian dish that's simple yet satisfying.</p>
+                                        <div class="align-items-center text-center"> 
+                                            <a href="#" class="btn btn-brand read-more-btn my-3 mx-auto" data-toggle="modal" data-target="#recipeModal">Read More</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="recipeItem bg-white shadow-on-hover">
+                                <img src="https://www.kisses-for-breakfast.com/wp-content/uploads/2020/01/DSC_0412-300x200.jpg
+                                " alt="Spaghetti"
+                                style="max-width: 100%; height: auto;">
+                                <div class="recipeItem-content">
+                                    <h5 class="text-center">Korea Fried Chicken</h5>
+                                    <p>Indulge in the creamy goodness of Spaghetti Carbonara,
+                                        a classic Italian dish that's simple yet satisfying.</p>
+                                        <div class="align-items-center text-center"> 
+                                            <a href="#" class="btn btn-brand read-more-btn my-3 mx-auto" data-toggle="modal" data-target="#recipeModal">Read More</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-end">
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                  <span aria-hidden="true">&laquo;</span>
+                                </a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                  <span aria-hidden="true">&raquo;</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
+                    </div>
+            </div>
+                <div class="tab-pane fade show" id="pills-dinner" role="tabpanel" aria-labelledby="pills-dinner-tab" tabindex="0">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="recipeItem bg-white shadow-on-hover">
+                                <img src="data:image/jpeg;base64,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" alt="Spaghetti"
+                                style="max-width: 100%; height: auto;">
+                                <div class="recipeItem-content">
+                                    <h5 class="text-center">Beef and Cabbage</h5>
+                                    <p>Indulge in the creamy goodness of Spaghetti Carbonara,
+                                        a classic Italian dish that's simple yet satisfying.</p>
+                                        <div class="align-items-center text-center"> 
+                                            <a href="#" class="btn btn-brand read-more-btn my-3 mx-auto" data-toggle="modal" data-target="#recipeModal">Read More</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="recipeItem bg-white shadow-on-hover">
+                                <img src="https://static.vecteezy.com/system/resources/thumbnails/026/607/325/small/a-delicious-tomato-soup-food-in-a-bowl-winter-food-and-healthy-protein-soup-meal-concept-by-ai-generated-free-photo.jpg" alt="Spaghetti"
+                                style="max-width: 100%; height: auto;">
+                                <div class="recipeItem-content">
+                                    <h5 class="text-center">Tomato Stock</h5>
+                                    <p>Indulge in the creamy goodness of Spaghetti Carbonara,
+                                        a classic Italian dish that's simple yet satisfying.</p>
+                                        <div class="align-items-center text-center"> 
+                                            <a href="#" class="btn btn-brand read-more-btn my-3 mx-auto" data-toggle="modal" data-target="#recipeModal">Read More</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="recipeItem bg-white shadow-on-hover">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Beef_fillet_steak_with_mushrooms.jpg/300px-Beef_fillet_steak_with_mushrooms.jpg" alt="Spaghetti"
+                                style="max-width: 100%; height: auto;">
+                                <div class="recipeItem-content">
+                                    <h5 class="text-center">Steak</h5>
+                                    <p>Indulge in the creamy goodness of Spaghetti Carbonara,
+                                        a classic Italian dish that's simple yet satisfying.</p>
+                                        <div class="align-items-center text-center"> 
+                                            <a href="#" class="btn btn-brand read-more-btn my-3 mx-auto" data-toggle="modal" data-target="#recipeModal">Read More</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="recipeItem bg-white shadow-on-hover">
+                                <img src="https://img.jamieoliver.com/home/wp-content/uploads/2023/06/2.Jacket_potatoes_28-300x200.jpg" alt="Spaghetti"
+                                style="max-width: 100%; height: auto;">
+                                <div class="recipeItem-content">
+                                    <h5 class="text-center">Air Fryer</h5>
+                                    <p>Indulge in the creamy goodness of Spaghetti Carbonara,
+                                        a classic Italian dish that's simple yet satisfying.</p>
+                                        <div class="align-items-center text-center"> 
+                                            <a href="#" class="btn btn-brand read-more-btn my-3 mx-auto" data-toggle="modal" data-target="#recipeModal">Read More</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="recipeItem bg-white shadow-on-hover">
+                                <img src="https://recipes.net/wp-content/uploads/2021/03/dry-red-curry-pork-stir-fry-recipe-300x200.jpeg" alt="Spaghetti"
+                                style="max-width: 100%; height: auto;">
+                                <div class="recipeItem-content">
+                                    <h5 class="text-center">Dry Red Curry with Pork Stir</h5>
+                                    <p>Indulge in the creamy goodness of Spaghetti Carbonara,
+                                        a classic Italian dish that's simple yet satisfying.</p>
+                                        <div class="align-items-center text-center"> 
+                                            <a href="#" class="btn btn-brand read-more-btn my-3 mx-auto" data-toggle="modal" data-target="#recipeModal">Read More</a>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="recipeItem bg-white shadow-on-hover">
+                                    <img src="https://elkeliving.com/wp-content/uploads/2019/12/red-curry2-300x200.jpg" alt="Spaghetti"
+                                    style="max-width: 100%; height: auto;">
+                                    <div class="recipeItem-content">
+                                        <h5 class="text-center">Thai Jastmine Curry </h5>
+                                        <p>Indulge in the creamy goodness of Spaghetti Carbonara,
+                                            a classic Italian dish that's simple yet satisfying.</p>
+                                            <div class="align-items-center text-center"> 
+                                                <a href="#" class="btn btn-brand read-more-btn my-3 mx-auto" data-toggle="modal" data-target="#recipeModal">Read More</a>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="recipeItem bg-white shadow-on-hover">
+                                    <img src="https://i1.wp.com/seonkyounglongest.com/wp-content/uploads/2019/04/Beef-Curry-4-.jpg?resize=300%2C200" alt="Spaghetti"
+                                    style="max-width: 100%; height: auto;">
+                                    <div class="recipeItem-content">
+                                        <h5 class="text-center">Beef urry</h5>
+                                        <p>Indulge in the creamy goodness of Spaghetti Carbonara,
+                                            a classic Italian dish that's simple yet satisfying.</p>
+                                            <div class="align-items-center text-center"> 
+                                                <a href="#" class="btn btn-brand read-more-btn my-3 mx-auto" data-toggle="modal" data-target="#recipeModal">Read More</a>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="recipeItem bg-white shadow-on-hover">
+                                    <img src="https://d2s742iet3d3t1.cloudfront.net/restaurants/restaurant-28140000000000000/menu/images/item-ca019c4d-c317-4d4e-9b94-70bdcc8ece19.jpg?size=medium" alt="Spaghetti"
+                                    style="max-width: 100%; height: auto;">
+                                    <div class="recipeItem-content">
+                                        <h5 class="text-center">Massaman</h5>
+                                        <p>Indulge in the creamy goodness of Spaghetti Carbonara,
+                                            a classic Italian dish that's simple yet satisfying.</p>
+                                            <div class="align-items-center text-center"> 
+                                                <a href="#" class="btn btn-brand read-more-btn my-3 mx-auto" data-toggle="modal" data-target="#recipeModal">Read More</a>
+                                            </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                    </div>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-end">
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                            </a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                    
+            </div>
+            </div>
+        </div>
+    </section>
+     <!-- Recipe Modal -->
+     <div class="modal fade" id="recipeModal" tabindex="-1" role="dialog" aria-labelledby="recipeModalLabel"
+     aria-hidden="true">
+     <div class="modal-dialog" role="document">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h5 class="modal-title" id="recipeModalLabel">Spaghetti  Recipe</h5>
+                 <button type="button" class="close ml-auto"  data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                 </button>
+             </div>
+             <div class="modal-body">
+                 <h5> Ingredients:</h5>
+                 <ul>
+                     <li>12 ounces (340g) spaghetti</li>
+                     <li>4 large eggs</li>
+                     <li>1 cup grated Parmesan cheese</li>
+                     <li>8 slices of bacon or pancetta, diced</li>
+                     <li>4 cloves garlic, minced</li>
+                     <li>Salt and black pepper, to taste</li>
+                     <li>Chopped parsley, for garnish (optional)</li>
+                 </ul>
+                 <h5> Cooking Steps:</h5>
+                 <ol>
+                     <li>Cook the spaghetti in a large pot of salted boiling water until al dente. Reserve about 1
+                         cup of pasta water, then drain the spaghetti and set it aside.</li>
+                     <li>While the spaghetti is cooking, whisk together the eggs and grated Parmesan cheese in a
+                         bowl. Season with black pepper.</li>
+                     <li>In a large skillet, cook the diced bacon or pancetta over medium heat until crispy. Remove
+                         the bacon from the skillet and set it aside on a plate lined with paper towels to drain
+                         excess grease.</li>
+                     <li>In the same skillet with the bacon drippings, add the minced garlic and cook for about 1
+                         minute until fragrant.</li>
+                     <li>Reduce the heat to low, then add the cooked spaghetti to the skillet with the garlic and
+                         bacon drippings. Toss well to coat the spaghetti.</li>
+                     <li>Remove the skillet from the heat, then quickly pour the egg and Parmesan mixture over the
+                         spaghetti while continuously tossing the spaghetti to coat it evenly. The residual heat from
+                         the spaghetti will cook the eggs and create a creamy sauce. If the sauce is too thick, add a
+                         bit of the reserved pasta water to loosen it up.</li>
+                     <li>Add the cooked bacon back to the skillet and toss everything together until well combined.
+                     </li>
+                     <li>Season the spaghetti carbonara with salt and additional black pepper to taste. Garnish with
+                         chopped parsley if desired.</li>
+                     <li>Serve the spaghetti carbonara immediately, topped with extra grated Parmesan cheese if
+                         desired.</li>
+                 </ol>
+             </div>
+             <div class="modal-footer">
+                 <button type="button" class="btn btn-brand" data-dismiss="modal">Close</button>
+             </div>
+         </div>
+     </div>
+ </div>
+  <!--blog-->
+  <section id="blog" class="bg-cover">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 intro-text">
+                <h1 class="text-white"> Food Blog</h1>
+                <p class="text-white"> Discover delightful recipes, culinary adventures, and food stories that will tantalize your taste buds and inspire your kitchen creativity. 
+                    Don't miss out on the latest recipes, cooking tips, and culinary adventures with trend title on our YouTube channel!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <div class="blog py-5 px-4 mb-3">
+                    <h4 class="text-white "> 3 Healthy Breakfast Ideas </h4>
+                    <p class="text-white">Start your day right with these nutritious and delicious breakfast
+                        ideas for all morning.</p>
+                        <a href="https://www.youtube.com/shorts/kgrxubbqRsg?feature=share" 
+                        class="btn btn-brand read-more-btn mx-3">Watch Video</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="blog py-5 px-4 mb-3">
+                    <h4 class="text-white ">Food For Babies </h4>
+                    <p class="text-white">Introducing solid foods is a significant milestone in a baby's development, 
+                        marking the beginning of a journey toward a varied diet.</p>
+                        <a href="https://www.youtube.com/shorts/FqkO0lV84oA?feature=share" 
+                        class="btn btn-brand read-more-btn mx-3">Watch Video</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="blog py-5 px-4 mb-3">
+                    <h4 class="text-white ">Weight Loss Food </h4>
+                    <p class="text-white">In the pursuit of achieving and maintaining a healthy weight, 
+                        choosing the right foods plays a pivotal and Important role. </p>
+                        <a href="https://www.youtube.com/shorts/QEkd-TW-mG4?feature=share" 
+                        class="btn btn-brand read-more-btn mx-3">Watch Video</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="blog py-5 px-4 mb-3">
+                    <h4 class="text-white ">Quick and Easy Dinner Recipes </h4>
+                    <p class="text-white">Explore our collection of simple and satisfying dinner recipes that
+                        you can prepare in time.</p>
+                        <a href="https://www.youtube.com/shorts/wBRebnEZDdk?t=8&feature=share" class="btn btn-brand read-more-btn mx-3">Watch Video</a>
+                </div>
+            </div>
+            <div >
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-end">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+            </div>
+        </div>
+    </div>
+  </section>
+   <!--contact-->
+  <section id="contact" class="bg-body-tertiary">
+    <div class="mainDiv container-fluid" style="padding: 0px 200px 0px 200px;">
+        <h1 class=" title text-black text-center p-4 m-0">Contact <span class="highlight-text">Us </span></h1>
+        <div class="containerContact row ">
+            <div class="contentSection col-lg-6 col-md-6 col-sm-12 mb-4">
+                <p>Have a question or suggestion? We'd love to hear from you!</p>
+                <form>
+                    <div class="form-group">
+                        <label for="name "  style="color: #333;">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" style="color: #333;">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" style="color: #333;">Message</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+                    </div>
+                    <div class="center-button" style="display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;">
+                        <button type="submit" class="btn btn-brand">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="containeeImage3  col-lg-6 col-md-6 col-sm-12" style="padding-left: 150px;">
+
+                <img src="https://www.acouplecooks.com/wp-content/uploads/2023/01/Vegan-Stir-Fry-006.jpg"
+                    alt="Noodle" style="display: block;height: 68vh;">
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!--about-->
+    <section id="about">
+        <div class="container">
+            <div class="row gy-4 align-items-center">
+                <div class="col-lg-5">
+                    <img src="https://www.shutterstock.com/image-photo/stack-orange-falling-flyingcreative-levitation-600nw-2038178309.jpg"
+                    style="height: 500px">
+                </div>
+                <div class="col-lg-5">
+                    <h1>About Us</h1>
+                    <div class="divider my-4"></div>
+                    <p>TastyVoyage is your ultimate destination for culinary inspiration. Our mission is to bring
+                        together food
+                        lovers from all walks of life to share their passion for cooking, eating, and exploring new
+                        flavors.</p>
+                    <p>With a diverse collection of recipes, cooking tips, and food stories, we strive to make every
+                        meal a
+                        memorable experience. Join our community and embark on a gastronomic adventure!</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f fa-2x"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube fa-2x"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter fa-2x"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram fa-2x"></i></a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>More Contact</h4>
+                    <p class="contact" style="color: #0c0c0c;">Email: info@tastyvoyage.com</p>
+                    <p class="contact" style="color: #0c0c0c;">Phone: +959123456789</p>
+                    <p class="contact" style="color: #0c0c0c;">Address: Yangon,Myanmar</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#recipes">Recipes</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">&copy; 2024 TastyVoyage. All rights reserved.</p>
+        </div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

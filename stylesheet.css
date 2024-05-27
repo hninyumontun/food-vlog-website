@@ -1,0 +1,220 @@
+
+body{
+    color: #7777;
+    line-height: 1.7;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+    color: #222;
+}
+a{
+    color: #222;
+    text-decoration: none;
+    transition: all 0.4s;
+    font-weight: 600;
+}
+a:hover{
+    color: #F58d17;
+}
+img{
+    min-width: 100%;
+}
+section{
+    padding-top:120px ; padding-top: 120px;
+}
+.btn{
+    border: 0;
+    padding: 14px 38px;
+    text-align: center;
+    
+}
+.btn-brand button   {
+    color: #ffff;
+    font-weight: 500;
+    border-color: #F58d17;
+    background-color: #F58d17;
+    width: 100px;
+    height: 40px;
+}
+.cooking:hover{
+    border-color: #ca7310;
+    background-color: #ca7310;
+    color: #ffff;
+}
+.btn-brand{
+    color: #ffff;
+    font-weight: 500;
+    border-color: #F58d17;
+    background-color: #F58d17;
+}
+.btn-brand:hover{
+    border-color: #ca7310;
+    background-color: #ca7310;
+    color: #ffff;
+    
+}
+/*slide */
+.bg-cover{
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+
+}
+.slide1{
+    background: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.7)), urL(https://hips.hearstapps.com/hmg-prod/images/orange-chicken-2-1673367967.jpg?crop=1xw:0.8277591973244147xh;center,top);
+
+}
+.slide2{
+    background: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.7)), urL(https://www.closerweekly.com/wp-content/uploads/2024/03/Orange-Chicken-Parm.jpg?crop=0px%2C541px%2C1334px%2C701px&resize=1200%2C630&quality=86&strip=all);
+
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+    background-color: rgb(0,0,0,0.8);
+    width: 40px; height: 70px;
+    margin: auto;
+
+}
+
+/*home*/
+.containerHome {
+    text-align: center;
+}
+
+.containerHome h1 {
+    font-weight: bold;
+}
+
+.contentSection {
+    background-color: #ffff;
+}
+
+.subscribe-form {
+    margin-top: 20px;
+}
+
+.subscribe-form input[type="email"] {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #fff;
+}
+
+.subscribe-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #F58d17;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.subscribe-form button:hover {
+    background-color: #000;
+}
+
+.containerImage {
+    margin-top: 0%;
+
+}
+
+.containerImage img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-right: 6px;
+}
+/* intro*/
+.intro-text{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.intro-text p{
+    max-width: 500px;
+    margin: 16px auto 0 auto;
+
+
+}
+/*recipe*/
+#recipe .nav-pills .nav-link{
+    background-color: #fff;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: #222;
+    border-radius: 100px;
+    box-shadow: 0 10px 40px rgb(0,0,0,0.1);
+
+}
+#recipe .nav-pills .nav-link.active{
+    background-color: #F58d17;
+    color: #ffff;
+
+}
+#pills-tab .nav-link {
+    width: 100px; }
+
+.recipeItem {
+        margin-bottom: 1rem;}
+.recipeItem-content h5{
+    margin-top:1rem ;
+}
+.recipeItem-content p{
+    margin-left: 12px; 
+    margin-right: 10px; 
+}
+
+/* about*/
+#about .divider{
+    width: 60px; height: 2px;
+    display: block;
+    background-color: #F58d17;
+}
+
+/*blog*/
+#blog{
+    background: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.7)), urL(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO3p-pHc16ugL136eRI9RpAdjCwnSxNoyp9A&usqp=CAU);
+ 
+}
+.blog{
+    border: 2px solid #fff;
+}
+/* about*/
+.social-link {
+    margin-right: 20px; 
+    color: #F58d17;
+}
+.social-link:hover {
+    color: #222; 
+}
+p {
+    color: #666; 
+}
+.highlight-text {
+    color: #F58d17;
+}
+.modal-body{
+    background-color: #ca7310;
+}
+.modal-body li {
+    color:#fff;
+}
+.pagination .page-link {
+    color: #ca7310; }
+
+.pagination .page-link:hover {
+    color:#222; 
+}
+.footer{
+    background-color: #fff;
+    margin-top: 3rem;
+    color: #F58d17;
+}
+.footer h4{
+    color: #F58d17;
+}
